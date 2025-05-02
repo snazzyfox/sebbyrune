@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Sebbyrune</title>
+    <link rel="stylesheet" href="https://unpkg.com/fixedsys-css/css/fixedsys.css">
+    <style>
+      body {
+        background-color: black;
+        color: #fff;
+        padding: 96px;
+        image-rendering: pixelated;
+        font-family: "Fixedsys";
+        font-size: 22px;
+        font-smooth: never;
+        -webkit-font-smoothing: none;
+        line-height: 1.5;
+      }
+      h1 {
+        margin: 1em;
+        text-align: center;
+      }
+      .dialog-box {
+        margin: auto;
+        border: 26px solid;
+        border-image: url("box.png");
+        border-image-slice: 13;
+        width: fit-content;
+        display: flex;
+        gap: 1ch;
+      }
+      img {
+        object-fit: contain;
+      }
+      .dialog-text {
+        flex-grow: 1;
+        outline: none;
+        white-space: pre;
+        min-width: 32ch;
+        min-height: 3em;
+      }
+    </style>
+  </head>
+  <body>
+
+     <h1>Sebbyrune</h1>
+     
+     <div class="dialog-box">
+        <img src="./sebbyrune.png" />
+        <div class="dialog-text" contenteditable="" spellcheck="false">* Enter text here.</div>
+     </div>
+
+  </body>
+</html>
